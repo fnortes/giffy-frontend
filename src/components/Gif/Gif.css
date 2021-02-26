@@ -1,0 +1,23 @@
+.Gif {
+  position: relative;
+}
+
+.Gif a {
+  text-decoration: none;
+}
+
+.Gif img {
+  width: 100%;
+}
+
+.Gif h4 {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.Gif-button {
+  position: absolute;
+  top: 20px;
+  right: 8px;
+  z-index: 1;
+}
