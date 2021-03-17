@@ -1,12 +1,13 @@
 import useUser from "hooks/useUser";
 import React from "react";
-import { Link } from "wouter";
+import { Link, useRoute } from "wouter";
 
 import "./Header.css";
 
 export default function Header() {
 
   const { isLogged, logout } = useUser();
+  const [match] = useRoute('/login');
 
   const handleOnClick = e => {
     e.preventDefault();
@@ -15,9 +16,14 @@ export default function Header() {
 
   return (
     <header className="gf-header">
-      {isLogged
-        ? <Link to="#" onClick={handleOnClick}>Logout</Link>
-        : <Link to="/login">Login</Link>}
+      {match
+        ? null
+        : isLogged
+          ? <Link to="#" onClick={handleOnClick}>Logout</Link>
+          : <>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
+          </>}
     </header>
   );
 

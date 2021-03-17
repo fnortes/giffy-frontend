@@ -28,7 +28,7 @@ export default function useUser() {
 
       });
 
-  }, [setJwt]);
+  }, [setJwt, setState]);
 
   const logout = useCallback(() => {
 

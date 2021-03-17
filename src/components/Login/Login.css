@@ -1,0 +1,58 @@
+.gf-form {
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
+}
+
+.gf-form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+
+.gf-form input {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 2;
+  box-sizing: border-box;
+}
+
+.gf-form input.error {
+  border: 1px solid red;
+}
+
+.gf-form .btn {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+.gf-form .btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.gf-form .btn[disabled] {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.gf-form small {
+  color: red;
+  font-size: 12px;
+  /* margin-top: -6px; */
+  margin-bottom: 16px;
+  display: block;
+}

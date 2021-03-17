@@ -18,7 +18,9 @@ export default function Detail({ params }) {
       <i>Cargando ...</i>
     </>
   );
+
   if (isError) return <Redirect to="/404" />
+
   if (!gif) return null;
 
   return <div>
@@ -28,4 +30,5 @@ export default function Detail({ params }) {
     <h1>Detalle del gif con id {params.id}</h1>
     <Gif {...gif} />
   </div>;
+
 }
